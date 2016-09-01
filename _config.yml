@@ -36,3 +36,4 @@ exclude:
     - Gemfile.lock
     - package.json
     - node_modules
+    - webpack.config.js
