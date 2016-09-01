@@ -13,7 +13,7 @@ gulp.task('styles', () => {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(paths.styles.dest))
+        .pipe(gulp.dest('css'))
 });
 
 gulp.task('webpack', () => {
