@@ -6,10 +6,10 @@ const ghPages = require('gulp-gh-pages');
 gulp.task('styles', () => {
     return gulp.src('_assets/styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('_site/assets/styles'));
+        .pipe(gulp.dest('assets/styles'));
 });
 
-gulp.task('deploy', () => {
-    return gulp.src('build/**/*')
+gulp.task('deploy', ['styles'], () => {
+    return gulp.src(['**/*', '!./node_modules/**/*', '!./.publish/**/*'])
         .pipe(ghPages());
 });
