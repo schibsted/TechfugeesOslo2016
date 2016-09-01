@@ -9,7 +9,15 @@ gulp.task('styles', () => {
         .pipe(gulp.dest('assets/styles'));
 });
 
-gulp.task('deploy', ['styles'], () => {
+gulp.task('webpack', () => {
+    return gulp.src('_assets/scripts/main.js')
+        .pipe(webpack(require('./webpack.config.js')))
+        .pipe(gulp.dest('assets/scripts'))
+});
+
+gulp.task('build', ['styles', 'webpack']);
+
+gulp.task('deploy', ['build'], () => {
     return gulp.src(['**/*', '!./node_modules/**/*', '!./.publish/**/*'])
         .pipe(ghPages());
 });
