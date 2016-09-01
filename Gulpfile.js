@@ -12,7 +12,7 @@ gulp.task('styles', () => {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('css'))
 });
 
@@ -25,6 +25,11 @@ gulp.task('webpack', () => {
 gulp.task('build', ['styles', 'webpack']);
 
 gulp.task('deploy', ['build'], () => {
-    return gulp.src(['**/*', '!./node_modules/**/*', '!./.publish/**/*'])
-        .pipe(ghPages());
+    return gulp.src([
+        '**/*',
+        '!./_assets/**/*',
+        '!./_site/**/*',
+        '!./.publish/**/*',
+        '!./node_modules/**/*'
+    ]).pipe(ghPages());
 });
