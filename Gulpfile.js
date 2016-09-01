@@ -6,7 +6,7 @@ const ghPages = require('gulp-gh-pages');
 gulp.task('styles', () => {
     return gulp.src('_assets/styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('build/styles'));
+        .pipe(gulp.dest('_site/assets/styles'));
 });
 
 gulp.task('deploy', () => {
