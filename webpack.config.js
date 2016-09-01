@@ -5,7 +5,6 @@ module.exports = {
     devtool: 'source-map',
     entry: __dirname + '/_assets/scripts/main.js',
     output: {
-        path: __dirname + '/assets/scripts',
         filename: '[name].js'
     },
     plugins: [

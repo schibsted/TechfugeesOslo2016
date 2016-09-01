@@ -3,4 +3,5 @@ _site
 .jekyll-metadata
 node_modules
 .publish
-assets
+css
+js

@@ -27,9 +27,6 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-keep_files:
-    - assets
-
 exclude:
     - Gulpfile.js
     - Gemfile
