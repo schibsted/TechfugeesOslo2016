@@ -7,18 +7,18 @@ const webpack = require('gulp-webpack');
 gulp.task('styles', () => {
     const processors = [require('autoprefixer')];
 
-    return gulp.src('_assets/styles/**/*.scss')
+    return gulp.src('_src/styles/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('styles'))
 });
 
 gulp.task('webpack', () => {
-    return gulp.src('_assets/scripts/main.js')
+    return gulp.src('_src/scripts/main.js')
         .pipe(webpack(require('./webpack.config.js')))
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('scripts'))
 });
 
 gulp.task('build', ['styles', 'webpack']);

@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
     devtool: 'source-map',
-    entry: __dirname + '/_assets/scripts/main.js',
+    entry: __dirname + '/_src/scripts/main.js',
     output: {
         filename: '[name].js'
     },
@@ -36,6 +36,6 @@ module.exports = {
     },
     resolve: {
         extensions: ['', '.js'],
-        root: [path.resolve(__dirname, './_assets')]
+        root: [path.resolve(__dirname, './_src')]
     }
 }
