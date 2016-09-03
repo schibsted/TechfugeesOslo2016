@@ -3,7 +3,6 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('gulp-webpack');
-const ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', () => {
     const processors = [require('autoprefixer')];
@@ -23,13 +22,3 @@ gulp.task('webpack', () => {
 });
 
 gulp.task('build', ['styles', 'webpack']);
-
-gulp.task('deploy', ['build'], () => {
-    return gulp.src([
-        '**/*',
-        '!./_assets/**/*',
-        '!./_site/**/*',
-        '!./.publish/**/*',
-        '!./node_modules/**/*'
-    ]).pipe(ghPages());
-});
