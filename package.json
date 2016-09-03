@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build && jekyll build"
+    "build": "gulp build && jekyll build",
+    "watch": "jekyll serve --watch"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,9 @@
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-stage-1": "^6.13.0",
+    "browser-sync": "^2.14.3",
+    "child_process": "^1.0.2",
     "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
