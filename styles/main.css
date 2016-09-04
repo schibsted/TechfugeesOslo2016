@@ -1,2 +1,149 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
+html {
+  font: 300 16px 'Open Sans', sans-serif;
+  letter-spacing: .2px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; }
+
+.input,
+input:not([type=button]):not([type=submit]) {
+  background: white;
+  border: none;
+  font: inherit;
+  margin: 0;
+  padding: 1rem; }
+
+.button {
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  letter-spacing: inherit;
+  padding: 1rem;
+  text-transform: uppercase; }
+  .button.-primary {
+    background: blue;
+    color: #fff; }
+
+.map.-fullsize {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center; }
+
+.newsletterSignup__input,
+.newsletterSignup__submit {
+  margin: .5rem 0;
+  text-align: center;
+  width: 100%; }
+
+.sponsorCard {
+  display: inline-block;
+  border: 1px solid #eee;
+  padding: 1rem;
+  min-width: 100px;
+  max-width: 300px; }
+  .sponsorCard.-minimized {
+    border: none; }
+    .sponsorCard.-minimized > *:not(.sponsorCard__logo) {
+      display: none; }
+
+.sponsorCard__logo {
+  width: 100%;
+  height: 100%; }
+
+.landingPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.landingPage__header {
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2em 1em; }
+  .landingPage__header::before {
+    display: block;
+    content: "";
+    background: url("../../images/1.jpg") top no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; }
+
+.landingPage__title {
+  text-transform: uppercase;
+  font-size: 12vw;
+  line-height: .6;
+  margin: 0 0 2rem;
+  width: 100%; }
+  .landingPage__title small {
+    font-size: .54em; }
+  @media (min-width: 850px) {
+    .landingPage__title {
+      font-size: 100px; } }
+
+.landingPage__subtitle {
+  text-transform: uppercase;
+  white-space: nowrap; }
+
+.landingPage__newsletterSignup {
+  max-width: 400px; }
+
+.landingPage__map {
+  position: relative;
+  height: 50vh; }
+
+.landingPage__sponsors {
+  background: rgba(255, 255, 255, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .landingPage__sponsors > * {
+    width: 50%; }
 
 /*# sourceMappingURL=main.css.map */

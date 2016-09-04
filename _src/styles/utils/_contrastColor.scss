@@ -1,0 +1,32 @@
+$contrast-dark: #000 !default;
+$contrast-light: #fff !default;
+$contrast-threshold: 75% !default;
+
+
+
+/// Returns `$light` or `$dark` depending on `$color` lightness.
+///
+/// @param {string} $color - Color you want contrasted
+///
+/// @param {string} $dark [#000] - Dark contrast color
+///
+/// @param {string} $light [#fff] - Light contrast color
+///
+/// @param {percent} $threshold [75%] - Contrast threshold
+///
+/// @example scss - Usage
+///   .be-white { color: contrast(#000) }
+///   .be-dark { color: contrast(#fff) }
+///
+/// @example css - Output
+///   .be-white { color: #fff }
+///   .be-dark { color: #000 }
+
+@function contrast-color(
+  $color,
+  $dark: $contrast-dark,
+  $light: $contrast-light,
+  $threshold: $contrast-threshold) {
+
+  @return if(lightness($color) > $threshold, $dark, $light);
+}

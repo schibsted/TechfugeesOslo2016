@@ -2,9 +2,51 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-  <li>
-    {{ post.date | date: "%b %-d, %Y" }}
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-  </li>
-{% endfor %}
+<div class="landingPage" data-component="landingPage">
+
+    <header class="landingPage__header">
+        <h1 class="landingPage__title">
+            Techfugees<br>
+            <small>Hackathon Oslo 2016</small>
+        </h1>
+        <h2 class="landingPage__subtitle">
+            <time datetime="2016-11-10">November 10th</time> <wbr> @ FINN.no<br>
+            Grensen 5-7, <wbr> 0159 Oslo
+        </h2>
+        <div class="landingPage__newsletterSignup">
+            <p>
+                More information coming soon. In the meantime, sign up below for the latest updates.
+            </p>
+
+            <form class="newsletterSignup" action="">
+                <input class="newsletterSignup__input input" type="email" placeholder="E-mail address" required>
+                <input class="newsletterSignup__submit button -primary" type="submit" value="Keep me updated!">
+            </form>
+
+        </div>
+    </header>
+
+    <main class="landingPage__main">
+        <div class="landingPage__map">
+
+            <div class="map -fullsize" data-component="map"></div>
+
+        </div>
+        <div class="landingPage__sponsors" data-ref="sponsors">
+
+            {% for sponsor in site.data.sponsors %}
+                <div class="sponsorCard -minimized" data-item>
+                    <img class="sponsorCard__logo" src="{{sponsor.image}}" alt="Logo">
+                    <h4 class="sponsorCard__title">{{sponsor.name}}</h4>
+                    <p class="sponsorCard__text">{{sponsor.text}}</p>
+                    <a class="sponsorCard__link" href="{{sponsor.link}}">Visit</a>
+                </div>
+            {% endfor %}
+
+        </div>
+    </main>
+
+    <footer class="landingPage__footer">
+
+    </footer>
+</div>

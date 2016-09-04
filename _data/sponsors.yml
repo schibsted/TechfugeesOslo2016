@@ -1,0 +1,24 @@
+- name: Sponsor 1
+  text: Lorem ipsum
+  link: http://www.google.com
+  image: //placehold.it/300x150
+
+- name: Sponsor 2
+  text: Lorem ipsum
+  link: http://www.google.com
+  image: //placehold.it/300x150
+
+- name: Sponsor 3
+  text: Lorem ipsum
+  link: http://www.google.com
+  image: //placehold.it/300x150
+
+- name: Sponsor 4
+  text: Lorem ipsum
+  link: http://www.google.com
+  image: //placehold.it/300x150
+
+- name: Sponsor 5
+  text: Lorem ipsum
+  link: http://www.google.com
+  image: //placehold.it/300x150

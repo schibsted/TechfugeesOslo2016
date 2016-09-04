@@ -1,0 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+html {
+  font: 300 16px 'Open Sans', sans-serif;
+  letter-spacing: .2px;
+}
+
+$tags-heading: h1, h2, h3, h4, h5, h6;
+
+#{$tags-heading} {
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,7 @@
+$palette: (
+  blue: blue
+);
+
+$colors: (
+  primary: map-get($palette, blue)
+)
