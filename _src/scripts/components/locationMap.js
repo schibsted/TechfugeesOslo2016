@@ -15,7 +15,7 @@ export default {
                 center: latLng,
                 zoom: 15,
                 disableDefaultUI: true,
-                // scrollwheel: false
+                scrollwheel: false
             });
 
             let marker = new google.maps.Marker({

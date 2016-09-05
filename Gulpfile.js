@@ -34,14 +34,15 @@ gulp.task('styles', () => {
 gulp.task('scripts', () => {
     return gulp.src(PATHS.SCRIPTS.SRC + '/main.js')
         .pipe(webpack(require('./webpack.config.js')))
-        .pipe(gulp.dest(PATHS.SCRIPTS.DEST))
+        .pipe(gulp.dest(PATHS.SCRIPTS.DEST));
 });
 
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['build',
     '--watch',
     '--incremental',
-    '--drafts'
+    '--drafts',
+    '--config=_config.yml,_config-dev.yml'
   ]);
 
   const jekyllLogger = (buffer) => {
