@@ -1,0 +1,9 @@
+<div class="sponsorLine" data-component="sponsorLine">
+    <div class="sponsorLine__logos" data-ref="logos">
+        {% for sponsor in site.data.sponsors %}
+            <a href={{sponsor.link}} class="sponsorLogo">
+                <img src="{{site.baseurl}}/images/sponsors/{{sponsor.image}}" alt="Logo" />
+            </a>
+        {% endfor %}
+    </div>
+</div>
