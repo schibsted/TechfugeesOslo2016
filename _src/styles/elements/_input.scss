@@ -1,8 +1,8 @@
-.input,
-input:not([type=button]):not([type=submit]) {
-  background: white;
-  border: none;
-  font: inherit;
-  margin: 0;
-  padding: 1rem;
+.input {
+    background: white;
+    border: none;
+    border-radius: $radius-normal;
+    font: inherit;
+    margin: 0;
+    padding: 1rem;
 }

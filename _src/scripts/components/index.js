@@ -1,2 +1,3 @@
 export landingPage from './landingPage';
-export map from './map';
+export locationMap from './locationMap';
+export sponsorLine from './sponsorLine';

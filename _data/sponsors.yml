@@ -1,24 +1,19 @@
-- name: Sponsor 1
-  text: Lorem ipsum
-  link: http://www.google.com
-  image: //placehold.it/300x150
+-   name: iHorizon
+    link: http://www.ihorizon.co.uk
+    image: /images/sponsors/ihorizon.png
 
-- name: Sponsor 2
-  text: Lorem ipsum
-  link: http://www.google.com
-  image: //placehold.it/300x150
+-   name: FINN.no
+    link: http://www.ihorizon.co.uk
+    image: /images/sponsors/finn.svg
 
-- name: Sponsor 3
-  text: Lorem ipsum
-  link: http://www.google.com
-  image: //placehold.it/300x150
+-   name: Schibsted Media Group
+    link: http://www.schibsted.com
+    image: /images/sponsors/schibsted.png
 
-- name: Sponsor 4
-  text: Lorem ipsum
-  link: http://www.google.com
-  image: //placehold.it/300x150
+-   name: Skills Matter
+    link: http://www.skillsmatter.com
+    image: /images/sponsors/skillsmatter.png
 
-- name: Sponsor 5
-  text: Lorem ipsum
-  link: http://www.google.com
-  image: //placehold.it/300x150
+-   name: The Kit Room
+    link: http://www.thekitroom.co.uk
+    image: /images/sponsors/thekitroom.png

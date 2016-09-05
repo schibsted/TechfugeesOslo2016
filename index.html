@@ -5,48 +5,33 @@ layout: default
 <div class="landingPage" data-component="landingPage">
 
     <header class="landingPage__header">
-        <h1 class="landingPage__title">
+        <h1 class="landingPage__headerTitle">
             Techfugees<br>
             <small>Hackathon Oslo 2016</small>
         </h1>
-        <h2 class="landingPage__subtitle">
-            <time datetime="2016-11-10">November 10th</time> <wbr> @ FINN.no<br>
-            Grensen 5-7, <wbr> 0159 Oslo
+        <h2 class="landingPage__headerSubtitle">
+            <time datetime="2016-11-10">October 14 – 16th</time> <wbr> @ FINN.no<br>
         </h2>
-        <div class="landingPage__newsletterSignup">
-            <p>
-                More information coming soon. In the meantime, sign up below for the latest updates.
-            </p>
-
-            <form class="newsletterSignup" action="">
-                <input class="newsletterSignup__input input" type="email" placeholder="E-mail address" required>
-                <input class="newsletterSignup__submit button -primary" type="submit" value="Keep me updated!">
-            </form>
-
+        <div class="landingPage__headerSignup">
+            <p>More information coming soon. In the meantime, sign up below for the latest updates.</p>
+            {% include newsletterSignup.html %}
         </div>
     </header>
 
-    <main class="landingPage__main">
-        <div class="landingPage__map">
+    <div class="landingPage__sponsors">
 
-            <div class="map -fullsize" data-component="map"></div>
-
+        <div class="sponsorLine" data-component="sponsorLine">
+            <!-- <div class="sponsorLine__title">
+                Our sponsors
+            </div> -->
+            <div class="sponsorLine__logos" data-ref="logos">
+                {% include sponsors.html %}
+            </div>
         </div>
-        <div class="landingPage__sponsors" data-ref="sponsors">
+    </div>
 
-            {% for sponsor in site.data.sponsors %}
-                <div class="sponsorCard -minimized" data-item>
-                    <img class="sponsorCard__logo" src="{{sponsor.image}}" alt="Logo">
-                    <h4 class="sponsorCard__title">{{sponsor.name}}</h4>
-                    <p class="sponsorCard__text">{{sponsor.text}}</p>
-                    <a class="sponsorCard__link" href="{{sponsor.link}}">Visit</a>
-                </div>
-            {% endfor %}
+    <div class="landingPage__locationMap">
+        {% include locationMap.html %}
+    </div>
 
-        </div>
-    </main>
-
-    <footer class="landingPage__footer">
-
-    </footer>
 </div>

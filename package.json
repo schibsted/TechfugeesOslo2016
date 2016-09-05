@@ -26,6 +26,8 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "google-maps": "^3.2.1"
+    "create-element": "^0.2.3",
+    "google-maps": "^3.2.1",
+    "marquee": "^0.2.1"
   }
 }

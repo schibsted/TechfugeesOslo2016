@@ -1,14 +1,15 @@
 .button {
-  border: none;
-  cursor: pointer;
-  font: inherit;
-  font-weight: bold;
-  letter-spacing: inherit;
-  padding: 1rem;
-  text-transform: uppercase;
+    border: 0;
+    border-radius: $radius-normal;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    letter-spacing: inherit;
+    padding: 1rem;
+    text-transform: uppercase;
 
-  &.-primary {
-      background: map-get($colors, primary);
-      color: contrast-color(map-get($colors, primary));
-  }
+    &.-primary {
+        background: map-get($colors, primary);
+        color: contrast-color(map-get($colors, primary));
+    }
 }

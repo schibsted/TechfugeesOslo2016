@@ -1,7 +1,11 @@
 $palette: (
-  blue: blue
+    blue: #0059FF
 );
 
 $colors: (
-  primary: map-get($palette, blue)
-)
+    primary: map-get($palette, blue)
+);
+
+$spacing-normal: 1rem;
+
+$radius-normal: 4px;
