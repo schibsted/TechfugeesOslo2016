@@ -7,8 +7,9 @@
 @import 'elements/input';
 @import 'elements/button';
 
-@import 'modules/map';
-@import 'modules/newsletterSignup';
-@import 'modules/sponsors';
+@import 'components/locationMap';
+@import 'components/newsletterSignup';
+@import 'components/sponsorLine';
+@import 'components/sponsorLogo';
 
 @import 'layouts/landingPage';

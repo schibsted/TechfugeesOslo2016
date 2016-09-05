@@ -33,22 +33,3 @@
         right: 0;
     }
 }
-
-.sponsorLogo {
-    border: 2px solid transparent;
-    border-radius: $radius-normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: .5em 1em;
-    min-width: 150px;
-    max-width: 190px;
-
-    &:hover {
-        border-color: #eee;
-    }
-
-    img {
-        max-width: 100%;
-    }
-}
