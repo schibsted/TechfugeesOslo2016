@@ -1,19 +1,15 @@
--   name: iHorizon
-    link: http://www.ihorizon.co.uk
-    image: ihorizon.png
-
--   name: FINN.no
-    link: http://www.ihorizon.co.uk
+-   name: "FINN.no"
+    link: https://www.finn.no
     image: finn.svg
 
--   name: Schibsted Media Group
-    link: http://www.schibsted.com
+-   name: "Schibsted Media Group"
+    link: https://www.schibsted.com
     image: schibsted.png
 
--   name: Skills Matter
-    link: http://www.skillsmatter.com
-    image: skillsmatter.png
+-   name: "UT: Studentbyrå"
+    link: http://www.utstudentbyra.no
+    image: ut.png
 
--   name: The Kit Room
-    link: http://www.thekitroom.co.uk
-    image: thekitroom.png
+-   name: "Katapult"
+    link: https://katapultoslo.wordpress.com
+    image: katapult.png
