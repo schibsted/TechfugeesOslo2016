@@ -1,6 +1,6 @@
-# TechfugeesOslo2016
+# events.schibsted.com
 
-Live at http://events.schibsted.com/hackathon/
+Techfugees Hackathon: http://events.schibsted.com/hackathon/
 
 ## Local development
 
