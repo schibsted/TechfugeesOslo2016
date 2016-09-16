@@ -1,5 +1,7 @@
 # TechfugeesOslo2016
 
+Live at http://events.schibsted.com/hackathon/
+
 ## Local development
 
 1. `gem install bundler jekyll`
