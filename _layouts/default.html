@@ -8,6 +8,11 @@
     <title>{{site.title}}</title>
 
     <link rel="stylesheet" href="{{site.baseurl}}/styles/main.css" media="screen">
+
+    {% if page.redirect %}
+    <meta http-equiv="refresh" content="0; url={{page.redirect}}" />
+    <link rel="canonical" href="{{page.redirect}}" />
+    {% endif %}
 </head>
 <body>
 
